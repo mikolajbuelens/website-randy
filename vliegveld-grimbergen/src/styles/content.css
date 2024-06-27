@@ -1,0 +1,33 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contentContainer {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  min-width: 300px;
+  width: fit-content;
+}
+
+.about img {
+  width: 450px;
+  object-fit: cover;
+  /* padding: 20px; */
+}
+
+.about p {
+  max-width: 800px;
+  /* width: 40%; */
+  padding: 20px;
+}

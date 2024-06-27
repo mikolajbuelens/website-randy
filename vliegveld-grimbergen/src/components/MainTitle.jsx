@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
+
 function MainTitle() {
   return (
-    <h1 className="mainTitle">
-      {/* VLIEGVELD <br></br> <span>GRIMBERGEN</span> <br></br>
-      <small>19xx - 19xx</small> */}
-      <img src="/logo.svg" alt="" />
-    </h1>
+    <div className="mainTitle">
+      <Link to="/">
+        <img src={logo} alt="" />
+      </Link>
+    </div>
   );
 }
 export default MainTitle;

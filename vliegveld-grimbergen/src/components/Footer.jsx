@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
 
 function Footer() {
   return (
     <footer>
-      <h1 className="navTitle">
-        <Link to="/">
-          VLIEGVELD <br></br>GRIMBERGEN
-        </Link>
-      </h1>
+      <Link to="/">
+        <img src={logo} alt="" />
+      </Link>
     </footer>
   );
 }

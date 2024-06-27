@@ -1,12 +1,18 @@
 import MainTitle from "../components/MainTitle";
+import { useParams } from "react-router-dom";
 
-function History({ topic }) {
+function History() {
+  // get param
+  const topic = useParams().topic;
+  // console.log(topic);
+
   return (
     <div>
       <MainTitle />
 
       <div className="textArea">
         <p>
+          <h2>{topic}</h2>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
           amet quisquam nostrum, qui fugiat, neque ullam tempore natus omnis
           excepturi, cumque aliquam blanditiis. Id libero minus dolorum nihil,
