@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="geschiedenis/:topic" element={<History />} />
+          <Route path="geschiedenis" element={<History />} />
           <Route path="over" element={<About />} />
           <Route path="virtueel-museum" element={<Gallery />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
