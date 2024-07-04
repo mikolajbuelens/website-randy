@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import MainTitle from "./MainTitle";
 
 function Navigation() {
   return (
-    <nav>
+    <nav className="desktopNav">
+      <MainTitle />
+
       {/* <h1 className="navTitle">
         <Link to="/">
           <img src="/logo.svg" alt="" />
@@ -20,7 +23,7 @@ function Navigation() {
           <Link to="/">Nieuws</Link>
         </li>
         <li>
-          <Link to="about">Over</Link>
+          <Link to="over">Over</Link>
         </li>
         <li>
           <Link to="about">Contact</Link>

@@ -51,5 +51,50 @@
 }
 
 .timelineImg {
-  padding: 20px;
+  padding: 10px;
+}
+
+.vertical-timeline-element-content p {
+  font-family: "Cutive", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.vertical-timeline-element--work {
+  /* background-image: url("/testPaper.jpg"); */
+  background-repeat: no-repeat !important;
+}
+
+.vertical-timeline-element--work {
+  font-family: "oswald", sans-serif;
+}
+
+.timelineImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.timelineImageContainer img {
+  height: 150px;
+}
+
+.source {
+  font-size: 1rem !important;
+  font-weight: 300;
+  font-family: "PT Serif", serif !important;
+  /* margin: 10px 0px 10px 0px; */
+  margin-left: 10px !important;
+  margin-top: -5px !important;
+  width: 100%;
+}
+
+.rotate90 {
+  transform: rotate(-90deg);
+  /* height: 280px !important; */
+  width: 55%;
+  height: auto !important;
+  object-fit: cover;
 }

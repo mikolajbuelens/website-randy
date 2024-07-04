@@ -1,13 +1,10 @@
 import "../styles/gallery.css";
 
-function GalleryImage({ image, onClick }) {
+function GalleryImage({ image, onClick, text }) {
   return (
     <div className="gallery-image" onClick={onClick}>
       <img loading="lazy" src={image} alt="gallery" />
-      <small>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita
-        modi
-      </small>
+      {/* <small>{text}</small> */}
     </div>
   );
 }

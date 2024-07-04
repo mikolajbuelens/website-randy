@@ -4,7 +4,7 @@ import MainTitle from "../components/MainTitle";
 function About() {
   return (
     <>
-      <MainTitle />
+      {/* <MainTitle /> */}
       <div className="flexCenter">
         <div className="contentContainer about flexRow">
           <img src={overFoto} alt="" />

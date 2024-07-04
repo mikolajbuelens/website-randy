@@ -8,14 +8,12 @@ function Fullscreen({ img, fullscreen, onClick }) {
   // console.log(fullscreen);
 
   return (
-    <div className="fixed">
-      {/* {console.log("fullscreen", fullscreen)} */}
+    <>
       <div
         onClick={() => onClick(false)}
         className={`fullscreenBackdrop ${fullscreen ? "show" : "hide"}`}
       ></div>
       <div className={`centerImg ${fullscreen ? "show" : "hide"}`}>
-        {/* <div className="imageContainer"> */}
         {/* TODO: CloseBtn */}
         {/* <button className="closeBtn">
             <svg
@@ -28,10 +26,15 @@ function Fullscreen({ img, fullscreen, onClick }) {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </button> */}
-        <img className="fullscreenImg" src={img} alt="" />
-        {/* </div> */}
+        <div className="fullscreenContainer">
+          <img className="fullscreenImg" src={img.path} alt="" />
+          {/* <div className="info"> */}
+          {/* <h1>Titel</h1> */}
+          <p>{img.text}</p>
+          {/* </div> */}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Fullscreen;

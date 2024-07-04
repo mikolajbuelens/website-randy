@@ -31,7 +31,7 @@ const HamburgerMenu = () => {
         <Link className="buyBook" to="/" onClick={closeMenu}>
           Boek bestellen
         </Link>
-        <Link to="/" onClick={closeMenu}>
+        <Link to="/geschiedenis" onClick={closeMenu}>
           Geschiedenis
         </Link>
         <Link to="/virtueel-museum" onClick={closeMenu}>

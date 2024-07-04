@@ -22,7 +22,7 @@ function Gallery() {
         onClick={() => triggerFullScreen(false)}
       />
 
-      <MainTitle />
+      {/* <MainTitle /> */}
       <div className="galleryContainer">
         {DATA.map((img) => {
           // console.log(id);
@@ -30,10 +30,11 @@ function Gallery() {
             <GalleryImage
               onClick={() => {
                 triggerFullScreen(true);
-                setFullscreenImg(img.path);
+                setFullscreenImg(img);
               }}
               key={img.id}
               image={img.path}
+              text={img.text}
             />
           );
         })}

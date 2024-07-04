@@ -8,25 +8,36 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function History() {
+  let iconStyle = {
+    background: "#A5543E",
+    color: "#333",
+  };
+  let contentStyle = {
+    background: "rgba(0, 0, 0, 0.7)",
+    color: "#fff",
+    boxShadow: "none",
+    backgroundImage: "url('public/testPaper.jpg')",
+  };
+
+  let contentArrowStyle = {
+    borderRight: "7px solid rgba(0, 0, 0, 0.5)",
+  };
+
   // get param
   // const topic = useParams().topic;
   // console.log(topic);
 
   return (
     <div>
-      <MainTitle />
+      {/* <MainTitle /> */}
       {/* vertical timeline */}
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1939"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Aanleg van reservevliegveld
@@ -38,20 +49,20 @@ function History() {
             Lintkasteelstraat werden gedraineerd, genivelleerd en met gras
             bezaaid.
           </p>
-          <img className="timelineImg" src={img} alt="" />
-          <img className="timelineImg" src={img} alt="" />
+          <img
+            className="timelineImg"
+            src="historyImages/Web1_H1_5a_img912.jpg"
+            alt=""
+          />
+          <p className="source">Archief Frans van Humbeek</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1940"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Duitse bezetting en uitbreiding
@@ -77,6 +88,13 @@ function History() {
             goed uitgerust vliegveld. Een Belgische aannemer werd verplicht om
             een modern waterleidingnet op het vliegveld te installeren.
           </p>
+          <img
+            className="timelineImg"
+            src="historyImages/Web2_H4_2a_Knipsel21-SharpenAI-Standard_Tom.jpg"
+            alt=""
+          />
+          <p className="source">Archief Willi Huck</p>
+
           <p>
             Het zouden vooral de Wekusta ‘Westa’ 26 en het Jagdgeschwader JG 26
             zijn die Grimbergen een tijdlang als thuisbasis gebruikten. De
@@ -86,20 +104,14 @@ function History() {
             Palace-hotel. De top-piloten van JG 26 waren uitgerust met
             performante jachtvliegtuigen van het type Focke-Wulf Fw 190.
           </p>
-          <img className="timelineImg" src={img} alt="" />
-          <img className="timelineImg" src={img} alt="" />
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1941"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Kalibreerschijf
@@ -112,20 +124,20 @@ function History() {
             voor het ijken en bijstellen van vliegtuigkompassen. De Vlaamse
             overheid heeft de schijf erkend als beschermd monument.
           </p>
-          <img className="timelineImg" src={img} alt="" />
-          <img className="timelineImg" src={img} alt="" />
+          <img
+            className="timelineImg"
+            src="historyImages/Web3_H3_15a_DSC_0477.jpg"
+            alt=""
+          />
+          <p className="source">Foto Paul Van Caesbroeck</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1944"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Geallieerde landing en terugtrekking van Duitsers
@@ -151,6 +163,7 @@ function History() {
             operaties te Arnhem werden vanop Grimbergen gesteund, tientallen
             C-47's stonden hier gestationeerd.
           </p>
+
           <h3 className="timelineSubtitle">28 september</h3>
           <p>
             Op 28 september 1944 namen drie Tempest squadrons (3, 56, 486 Sqn)
@@ -161,20 +174,22 @@ function History() {
             de gastvrijheid van de plaatselijke bewoners. Ze konden genieten van
             warme huiskamers, hun klamme tenten werden hier zelden gebruikt.
           </p>
-          <img className="timelineImg" src={img} alt="" />
-          <img className="timelineImg" src={img} alt="" />
+          <img
+            className="timelineImg"
+            src="historyImages/Web4_H7_10b_pic2_p241_Cato.jpg"
+            alt=""
+          />
+          <p className="source">Norwegian Defence Museum</p>
+
+          {/* <img className="timelineImg" src={img} alt="" /> */}
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1945"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Aanval op vliegveld en Poolse Wing
@@ -211,6 +226,18 @@ function History() {
             overhandigde Ed een verwarmer van vliegkledij die hij in 1945 uit de
             neergekomen Hard Seventeen had verwijderd.
           </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
+          date="1945-1946"
+          iconStyle={iconStyle}
+        >
+          <h3 className="vertical-timeline-element-title timelineTitle">
+            Camp White Tie
+          </h3>
+          <h3 className="timelineSubtitle">Mei 1945 - december 1946</h3>
           <p>
             Naast de piloten en hun vliegtuigen maakten natuurlijk verschillende
             steuneenheden gebruik van het vliegveld, van Airfield Construction
@@ -226,20 +253,31 @@ function History() {
             van de maanden na de bevrijding, van een periode waarvan vrijwel
             geen geschreven archieven bestaan.
           </p>
-          <img className="timelineImg" src={img} alt="" />
-          <img className="timelineImg" src={img} alt="" />
-        </VerticalTimelineElement>
+          <div className="timelineImageContainer">
+            <img className="timelineImg" src="historyImages/Web5a.jpg" alt="" />
+            <img className="timelineImg" src="historyImages/Web5b.jpg" alt="" />
 
+            <img
+              className="timelineImg"
+              src="historyImages/Web5d_H17_Foto3_RichardMicklerDogtag.jpg"
+              alt=""
+            />
+            <p className="source">Archief Randy Buelens</p>
+
+            <img
+              className="timelineImg rotate90"
+              src="historyImages/Web5c_H17_Foto54_Stuurknuppel.jpg"
+              alt=""
+            />
+            <p className="source">Archief Anton Blokken</p>
+          </div>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            boxShadow: "none",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid rgba(0, 0, 0, 0.5)" }}
+          contentStyle={contentStyle}
+          contentArrowStyle={contentArrowStyle}
           date="1946"
-          iconStyle={{ background: "#A5543E", color: "#333" }}
+          iconStyle={iconStyle}
         >
           <h3 className="vertical-timeline-element-title timelineTitle">
             Teruggave en toerismevliegveld
@@ -255,8 +293,14 @@ function History() {
             diverse luchtvaartfirma’s kwamen zich op het vliegveld vestigen. Het
             werd beheerd door de toenmalige Regie der Luchtwegen (RLW).
           </p>
-          <img className="timelineImg" src={img} alt="" />
-
+          <img
+            className="timelineImg"
+            src="historyImages/Web6_H20_2_scannen0007.jpg"
+            alt=""
+          />
+          <p className="source">
+            Foto Leopold Van Seghbroeck, archief Frans Van Humbeek
+          </p>
           <h3 className="timelineSubtitle">November</h3>
           <p>
             In november 1947 werden twee unieke, ronde loodsen officieel
@@ -265,7 +309,9 @@ function History() {
             gerestaureerd. Momenteel zorgt de vzw Recreatief Vliegveld
             Grimbergen (RVG) voor de exploitatie van het vliegveld.
           </p>
-          <img className="timelineImg" src={img} alt="" />
+
+          <img className="timelineImg" src="historyImages/Web7.JPG" alt="" />
+          <p className="source">Foto Frans Van Humbeek</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
