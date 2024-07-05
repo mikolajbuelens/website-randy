@@ -29,7 +29,12 @@ nav {
 .buyBook {
   background-color: #535e38;
   color: white;
-  padding: 10px;
+  padding: 10px !important;
+}
+
+.buyBook:hover {
+  background-color: #a5543e !important;
+  color: white !important;
 }
 
 h3 {
@@ -87,6 +92,7 @@ footer a {
   font-family: 700;
   padding: 20px;
   text-align: center !important;
+  transition: all 0.3s ease;
 }
 
 nav a:hover:not(.active) {
@@ -118,6 +124,14 @@ footer img {
 .desktopNav {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+}
+
+.desktopNav li,
+.desktopNav a,
+.desktopNav a ul {
+  height: fit-content;
+  padding-bottom: 0;
 }
 
 .backgroundImage {
@@ -211,7 +225,7 @@ nav .mainTitle img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .textArea {
@@ -250,20 +264,30 @@ p img {
 
 h2 {
   text-align: center;
-  border-bottom: #535e38 2px solid;
+  /* border-bottom: #535e38 2px solid; */
   width: fit-content;
-  background-color: #535e38;
+  /* background-color: #535e38; */
   position: relative;
-  top: -40px;
-  left: -20px;
+  opacity: 0.5;
+  /* top: -50px; */
+  /* left: -20px; */
   padding: 3px;
   font-family: "oswald", sans-serif;
 }
 
+.flexIntro {
+  flex-direction: column;
+}
+
+.pending {
+  color: #a5543e;
+}
+
 .active {
-  background-color: #535e38;
-  padding: 10px;
-  color: #000000;
+  /* background-color: #535e38; */
+  /* padding: 10px; */
+  color: #535e38;
+  border-bottom: #535e38 1px solid;
 }
 
 .Nav .dropdownMenu li::after {
@@ -365,7 +389,7 @@ small {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
 }

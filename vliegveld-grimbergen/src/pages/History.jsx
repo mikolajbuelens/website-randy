@@ -13,10 +13,10 @@ function History() {
     color: "#333",
   };
   let contentStyle = {
-    background: "rgba(0, 0, 0, 0.7)",
+    background: "rgba(0, 0, 0, 0.6)",
     color: "#fff",
     boxShadow: "none",
-    backgroundImage: "url('public/testPaper.jpg')",
+    // backgroundImage: "url('paperTexture.jpg')",
   };
 
   let contentArrowStyle = {
@@ -29,7 +29,9 @@ function History() {
 
   return (
     <div>
-      {/* <MainTitle /> */}
+      <div className="flexCenter">
+        <h2 className="introTitle">Geschiedenis</h2>
+      </div>
       {/* vertical timeline */}
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -253,7 +255,15 @@ function History() {
             van de maanden na de bevrijding, van een periode waarvan vrijwel
             geen geschreven archieven bestaan.
           </p>
-          <div className="timelineImageContainer">
+
+          <img
+            className="timelineImg"
+            src="historyImages/campWhiteTie.jpg"
+            alt=""
+          />
+          <p className="source">National Archives and Records Administration</p>
+
+          {/* <div className="timelineImageContainer">
             <img className="timelineImg" src="historyImages/Web5a.jpg" alt="" />
             <img className="timelineImg" src="historyImages/Web5b.jpg" alt="" />
 
@@ -270,7 +280,7 @@ function History() {
               alt=""
             />
             <p className="source">Archief Anton Blokken</p>
-          </div>
+          </div> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

@@ -6,6 +6,9 @@ function About() {
     <>
       {/* <MainTitle /> */}
       <div className="flexCenter">
+        <h2 className="introTitle">Over</h2>
+      </div>
+      <div className="flexCenter">
         <div className="contentContainer about flexRow">
           <img src={overFoto} alt="" />
           <p>

@@ -6,6 +6,7 @@ import History from "./pages/History";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 
+
 function App() {
   return (
     <BrowserRouter basename="/website-randy">

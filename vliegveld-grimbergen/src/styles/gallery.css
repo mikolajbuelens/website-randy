@@ -144,7 +144,7 @@ small {
 }
 
 .fullscreenContainer p {
-  background-image: url("public/testPaper.jpg");
+  background-image: url("/paperTexture.jpg");
   width: 100%;
   max-width: 100%;
   /* height: fit-content; */
@@ -156,9 +156,26 @@ small {
   color: black;
 }
 
+.galleryIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 800px) {
   .gallery-image img {
     filter: grayscale(0%);
+  }
+
+  .galleryIntro {
+    width: 80%;
   }
 
   .fullscreenImg {

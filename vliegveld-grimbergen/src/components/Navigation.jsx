@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MainTitle from "./MainTitle";
 
 function Navigation() {
@@ -13,20 +13,55 @@ function Navigation() {
       </h1> */}
       <ul>
         <li>
-          <Link to="/geschiedenis">Geschiedenis</Link>
+          <NavLink
+            to="/geschiedenis"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Geschiedenis
+          </NavLink>
         </li>
         <li>
-          <Link to="/virtueel-museum">Virtueel museum</Link>
+          <NavLink
+            to="/virtueel-museum"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Virtueel museum
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/">Nieuws</Link>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Nieuws
+          </NavLink>
         </li>
         <li>
-          <Link to="over">Over</Link>
+          <NavLink
+            to="over"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Over
+          </NavLink>
         </li>
         <li>
-          <Link to="about">Contact</Link>
+          <NavLink
+            to="about"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Contact
+          </NavLink>
         </li>
         <li>
           <Link className="buyBook" to="/">
