@@ -3,6 +3,7 @@ import DATA from "../data/imageData.json";
 import GalleryImage from "../components/GalleryImage";
 import MainTitle from "../components/MainTitle";
 import Fullscreen from "../components/Fullscreen";
+import AltFullscreen from "../components/AltFullscreen";
 
 // console.log(DATA);
 
@@ -40,7 +41,7 @@ function Gallery() {
           gerespecteerd.
         </h1>
       </div>
-      <Fullscreen
+      <AltFullscreen
         img={fullscreenImg}
         fullscreen={display}
         onClick={() => triggerFullScreen(false)}

@@ -11,6 +11,9 @@ function Layout() {
   return (
     <>
       <div className="backgroundImage"></div>
+      <img className="spitfire" src="topdown-spitfire-grey.png" alt="" />
+      {/* <img className="spitfire2" src="topdown-spitfire-grey.png" alt="" />
+      <img className="spitfire3" src="topdown-spitfire-grey.png" alt="" /> */}
 
       <Navigation />
       <HamburgerMenu />

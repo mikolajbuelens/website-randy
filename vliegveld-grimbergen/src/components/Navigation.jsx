@@ -55,7 +55,7 @@ function Navigation() {
         </li>
         <li>
           <NavLink
-            to="about"
+            to="contact"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
             }
@@ -64,7 +64,7 @@ function Navigation() {
           </NavLink>
         </li>
         <li>
-          <Link className="buyBook" to="/">
+          <Link className="buyBook" to="/boek">
             Boek bestellen
           </Link>
         </li>

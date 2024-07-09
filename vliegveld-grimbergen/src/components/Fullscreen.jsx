@@ -13,9 +13,9 @@ function Fullscreen({ img, fullscreen, onClick }) {
         onClick={() => onClick(false)}
         className={`fullscreenBackdrop ${fullscreen ? "show" : "hide"}`}
       ></div>
-      <div className={`centerImg ${fullscreen ? "show" : "hide"}`}>
-        {/* TODO: CloseBtn */}
-        {/* <button className="closeBtn">
+      {/* <div className={`centerImg ${fullscreen ? "show" : "hide"}`}> */}
+      {/* TODO: CloseBtn */}
+      {/* <button className="closeBtn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -26,14 +26,14 @@ function Fullscreen({ img, fullscreen, onClick }) {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </button> */}
-        <div className="fullscreenContainer">
-          <img className="fullscreenImg" src={img.path} alt="" />
-          {/* <div className="info"> */}
-          {/* <h1>Titel</h1> */}
-          <p>{img.text}</p>
-          {/* </div> */}
-        </div>
+      <div className={`fullscreenContainer ${fullscreen ? "show" : "hide"}`}>
+        <img className="fullscreenImg" src={img.path} alt="" />
+        {/* <div className="info"> */}
+        {/* <h1>Titel</h1> */}
+        <p>{img.text}</p>
+        {/* </div> */}
       </div>
+      {/* </div> */}
     </>
   );
 }

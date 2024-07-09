@@ -28,7 +28,7 @@ const HamburgerMenu = () => {
       </div>
       <div className={hamburgerCSS.menuItems}>
         {/* <img className={hamburgerCSS.HamburgerImg} src={LogoB} alt="Logo" /> */}
-        <Link className="buyBook" to="/" onClick={closeMenu}>
+        <Link className="buyBook" to="/boek" onClick={closeMenu}>
           Boek bestellen
         </Link>
         <Link to="/geschiedenis" onClick={closeMenu}>
@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
           Over
         </Link>
 
-        <Link to="/" onClick={closeMenu}>
+        <Link to="/contact" onClick={closeMenu}>
           Contact
         </Link>
       </div>

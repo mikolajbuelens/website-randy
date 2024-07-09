@@ -31,13 +31,13 @@ function HomeMenu() {
           </Link>
         </div>
         <div className="homeMenuItem">
-          <Link to="/">
+          <Link to="/contact">
             Contact
             <img src={placeHolder} alt="" />
           </Link>
         </div>{" "}
         <div className="homeMenuItem">
-          <Link to="/">
+          <Link to="/boek">
             Boek Bestellen
             <img src={placeHolder} alt="" />
           </Link>
