@@ -6,22 +6,20 @@ import "../styles/content.css";
 import logo from "../assets/images/logo.svg";
 import HamburgerMenu from "../components/HamburgerMenu";
 import Fullscreen from "../components/Fullscreen";
+import ScrollToTop from "../components/ScrollToTop";
+import spitfire from "../assets/images/topdown-spitfire-grey.png";
 
 function Layout() {
   return (
     <>
       <div className="backgroundImage"></div>
-      <img className="spitfire" src="topdown-spitfire-grey.png" alt="" />
-      {/* <img className="spitfire2" src="topdown-spitfire-grey.png" alt="" />
-      <img className="spitfire3" src="topdown-spitfire-grey.png" alt="" /> */}
-
+      <img className="spitfire" src={spitfire} alt="Spitfire" />
       <Navigation />
       <HamburgerMenu />
-      {/* <Fullscreen /> */}
+      <ScrollToTop />
       <div className="outletWrapper">
         <Outlet />
       </div>
-
       <Footer />
     </>
   );

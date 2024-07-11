@@ -38,7 +38,7 @@ const HamburgerMenu = () => {
           Virtueel museum
         </Link>
 
-        <Link to="/" onClick={closeMenu}>
+        <Link to="/nieuws" onClick={closeMenu}>
           Nieuws
         </Link>
         <Link to="/over" onClick={closeMenu}>

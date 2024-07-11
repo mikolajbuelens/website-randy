@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import MainTitle from "./MainTitle";
+import BuyButton from "./BuyButton";
 
 function Navigation() {
   return (
@@ -35,7 +36,7 @@ function Navigation() {
 
         <li>
           <NavLink
-            to="/"
+            to="/nieuws"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
             }
@@ -64,9 +65,7 @@ function Navigation() {
           </NavLink>
         </li>
         <li>
-          <Link className="buyBook" to="/boek">
-            Boek bestellen
-          </Link>
+          <BuyButton />
         </li>
       </ul>
     </nav>

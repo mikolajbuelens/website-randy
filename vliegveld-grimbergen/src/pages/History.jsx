@@ -1,6 +1,6 @@
 import MainTitle from "../components/MainTitle";
 import { useParams } from "react-router-dom";
-import img from "/src/assets/images/placeholder-image.jpg";
+// import img from "/src/assets/images/placeholder-image.jpg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
